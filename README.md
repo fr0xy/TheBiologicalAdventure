@@ -1,6 +1,6 @@
 # The Biological Adventure
 ## Credits
-![Alt text](./Assets/Images/CreditsEN.png?raw=true "Level 1")
+![Alt text](./Assets/Images/CREDITSEN.png?raw=false "Credits")
 ## Screenshots
 ![Alt text](./Screenshots/level1.png?raw=true "Level 1")
 ![Alt text](./Screenshots/level2.png?raw=true "Level 2")
