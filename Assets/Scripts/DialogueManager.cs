@@ -46,18 +46,13 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-        Debug.Log("sentences.Count: " + sentences.Count + "   IsQuestion: " + isQuestion);
         if (sentences.Count == 0 && isQuestion == true) {
-            Debug.Log("La");
             QuestionBox.SetActive(true);
             nameTextQuestion.text = nameText.text;
             DialogueBox.SetActive(false);
-            StopCoroutine(TypeSentence(sentence, dialogueTextQuestion));
             StartCoroutine(TypeSentence(sentence, dialogueTextQuestion));
         }
         else {
-            Debug.Log("ici");
-            StopCoroutine(TypeSentence(sentence, dialogueText));
             StartCoroutine(TypeSentence(sentence, dialogueText));
         }
         // dialogueText.text = sentence;
